@@ -1,0 +1,244 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Make sure to use single quotes around font names with spaces */
+    background-color: #ffffff;
+}
+
+header h1,
+header h2,
+header p {
+    font-weight: bold;
+    /* Membuat teks menjadi tebal */
+    font-size: 22px;
+    /* Mengatur ukuran teks menjadi 22px */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+}
+
+.logo img[alt="KONTRAKANKU"] {
+    font-weight: bold;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container {
+    background-color: #009dff;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 50px;
+    /* Menambahkan jarak antara tombol */
+}
+
+.buttons button {
+    position: relative;
+    /* Membuat posisi relatif */
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    /* Membuat tombol lebih besar */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    /* Ukuran tulisan lebih besar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Menambahkan bayangan hitam */
+    transition: background-color 0.3s ease;
+}
+
+.buttons button img {
+    pointer-events: none;
+    display: block;
+    /* Membuat gambar menjadi blok */
+    width: 50px;
+    /* Sesuaikan ukuran gambar */
+    margin: 0 auto 10px;
+    /* Menyesuaikan tata letak gambar */
+}
+
+.buttons button:hover {
+    background-color: #7f7f7f;
+    /* Warna saat tombol di-hover */
+}
+
+.advertisement {
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.kontrakan-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.kontrakan-item {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    text-align: left;
+    /* Teks di sebelah kanan tidak di tengah */
+}
+
+.kontrakan-item img {
+    width: 250px;
+    /* Ubah sesuai kebutuhan */
+    height: 200px;
+    /* Biarkan tinggi gambar menyesuaikan proporsi */
+}
+
+.kontrakan-item h3 {
+    margin-top: 1rem;
+    font-weight: bold;
+    /* Membuat judul menjadi tebal */
+}
+
+.kontrakan-item p {
+    margin-top: 0.5rem;
+}
+
+
+/* Mengatur tinggi gambar carousel */
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* Mengatur warna teks caption */
+
+.carousel-caption {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Mengatur warna tombol navigasi */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) contrast(10);
+    /* Mengubah warna tombol menjadi putih */
+}
+
+
+/* Mengatur transisi animasi */
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Mengatur efek transisi pada saat slide berganti */
+
+.carousel-item.active .carousel-item-next,
+.carousel-item.active .carousel-item-prev {
+    transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(100%);
+}
+
+
+/* Mengatur durasi animasi */
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.2s ease;
+}
+
+
+/* #carousel-container {
+    position: relative;
+}
+
+#carousel {
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; */
+
+
+/* Ganti nilai z-index menjadi lebih tinggi */
+
+
+/* background-color: rgba(0, 195, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+} */

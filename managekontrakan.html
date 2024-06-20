@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Kontrakanku</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Kontrakanku</h2>
+            </div>
+            <ul>
+                <li><a href="admin.html"><i class="fas fa-users"></i> User Manager</a></li>
+                <li><a href=""><i class="fas fa-home"></i> Manage Kontrakan</a></li>
+                <li><a href="managepemasukan.html"><i class="fas fa-money-bill-wave"></i> Manage Pemasukan</a></li>
+                <li><a href="manageiklan.html"><i class="fas fa-money-bill-wave"></i> Manage iklan</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>Dashboard Admin</h1>
+            </header>
+
+            <section class="main-content">
+                <h2>Manage Kontrakan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Kontrakan</th>
+                            <th>Lokasi</th>
+                            <th>Harga</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kontrakan Indah</td>
+                            <td>Malang</td>
+                            <td>Rp 12.000.000</td>
+                            <td><button class="btn btn-danger">Hapus</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Kontrakan Nyaman</td>
+                            <td>Surabaya</td>
+                            <td>Rp 15.000.000</td>
+                            <td><button class="btn btn-danger">Hapus</button></td>
+                        </tr>
+                        <!-- Tambahkan baris lain sesuai kebutuhan -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

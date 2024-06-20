@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrakanku</title>
+    <link rel="stylesheet" href="carikontrakan.css">
+</head>
+
+<body>
+    <header>
+        <h1>KONTRAKANKU</h1>
+    </header>
+    <div class="container">
+        <h2>Pilih Kontrakanmu dan buat jadi KENYATAAN</h2>
+        <div class="form-container">
+            <form>
+                <label for="location">Lokasi :</label>
+                <input type="text" id="location" name="location">
+
+                <div class="row">
+                    <div class="column">
+                        <label for="bedrooms">Jumlah Kamar :</label>
+                        <input type="number" id="bedrooms" name="bedrooms">
+                    </div>
+                    <div class="column">
+                        <label for="bathrooms">Jumlah Kamar mandi :</label>
+                        <input type="number" id="bathrooms" name="bathrooms">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="kitchen">Dapur :</label>
+                        <select id="kitchen" name="kitchen">
+                            <option value="ada">Ada</option>
+                            <option value="tidak ada">Tidak ada</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <label for="livingroom">Ruang Tamu :</label>
+                        <select id="livingroom" name="livingroom">
+                            <option value="ada">Ada</option>
+                            <option value="tidak ada">Tidak ada</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <label for="garage">Garasi :</label>
+                        <select id="garage" name="garage">
+                            <option value="ada">Ada</option>
+                            <option value="tidak ada">Tidak ada</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="price_start">Harga awal :</label>
+                        <input type="number" id="price_start" name="price_start">
+                    </div>
+                    <div class="column">
+                        <label for="price_end">Harga akhir :</label>
+                        <input type="number" id="price_end" name="price_end">
+                    </div>
+                </div>
+
+                <label for="electricity">Listrik *Kwh :</label>
+                <select id="electricity" name="electricity">
+                    <option value="1300">1300 Kwh</option>
+                    <option value="2200">2200 Kwh</option>
+                    <option value="3500">3500 Kwh</option>
+                </select>
+
+                <button type="submit">Carikan saya</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

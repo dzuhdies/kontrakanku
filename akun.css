@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #00c8b3;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.birthdate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthdate input {
+    width: 32%;
+}
+
+.edit-profile-btn {
+    background-color: #ff3860;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.edit-profile-btn:hover {
+    background-color: #e02a50;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.email-section,
+.phone-section {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.title-with-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-info,
+.phone-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.email-info span,
+.phone-info span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.add-email-btn,
+.add-phone-btn,
+.delete-btn,
+.delete-account-btn {
+    background-color: #00d1b2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-email-btn,
+.add-phone-btn {
+    flex-shrink: 0;
+}
+
+.delete-account-btn {
+    background-color: #ff3860;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: transparent;
+    color: #ff3860;
+    font-size: 20px;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+}
